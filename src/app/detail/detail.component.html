@@ -1,0 +1,8 @@
+<p>Details</p>
+
+@if (currentTodo(); as todo){
+    <h2>{{ todo.title }}</h2>
+    <p>{{ todo.description }}</p>
+  } @else {
+    <p>Could not find todo...</p>
+  }

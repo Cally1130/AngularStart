@@ -1,0 +1,3 @@
+<p>To Do</p>
+<app-todo-form (todoSubmitted)="createTodo($event)"></app-todo-form>
+<app-todo-list [todos]="todoService.todos()" (todoDeleted)="deleteTodo($event)"></app-todo-list>
